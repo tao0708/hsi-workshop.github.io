@@ -1,0 +1,134 @@
+<!DOCDYPE HTML>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<meta name="keywords" content="AI,conference,heuristic" />
+	<title>IJCAI-20</title>
+	
+	<link rel="stylesheet" type="text/css" href="../css/mui.css" />
+	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/mui.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="topPart" class="heading">
+			<div class="heading-txt-not-ie heading-txt">The 1st International Workshop on Heuristic Search in Industry</div>
+			<div class="heading-name"><a href="https://www.ijcai20.org/contact.html">In Conjunction with 29th IJCAI Conference on Artificial Intelligence (IJCAI-20)</a></div>
+			<div class="heading-sub">July 11-17, 2020, Yokohama, Japan</div>
+			<div class="mini-toggle">
+			<a href="#" class="fa fa-bars"></a>
+		</div>
+		</div><!--.header ends-->
+		<div class="main-nav">
+			<a href="#">Home</a>
+			<a href="cfp.html">Call For Papers</a>
+			<a href="organizers.html">Organizers</a>
+			<a href="program.html">Program</a>
+		</div><!--.main-nav ends -->
+		<div class="mini-nav-container isHidden">
+			<div><a href="#" class="fa fa-times"></a></div>
+			<div class="mini-nav-title">
+				<div>The 1st International Workshop on Heuristic Search in Industry</div>
+				<div><a href="https://www.ijcai20.org/contact.html">In Conjunction with 29th IJCAI Conference on Artificial Intelligence (IJCAI-20)</a></div>
+				<div>July 11-17, 2020, Yokohama, Japan</div>
+			</div>
+			<div class="mini-nav">
+				<a href="#">Home</a>
+				<a href="cfp.html">Call For Papers</a>
+				<a href="organizers.html">Organizers</a>
+				<a href="program.html">Program</a>
+			</div>
+		</div><!--.mini-nav ends -->
+		<div class="content">
+			<div class="banner scale">
+				<img src="../imgs/header-Yokohama.jpg"/>
+			</div>
+			<!-- <div class="banner">
+				<div class="banner-content">
+                	<div class="banner-date">July 11-17, 2020</div>
+                	<div class="banner-title">The 1st International Workshop on Heuristic Search in Industry</div>
+                	<div class="banner-location">Yokohama, Japan</div>
+                	<div class="banner-text">In Conjunction with 29th IJCAI Conference on Artificial Intelligence (IJCAI-20)</div>
+              </div>
+			</div> -->
+			<!-- <div class="intro">
+				<div class="intro-item">
+					<div class="intro-img"><img src="../imgs/intro_1.jpg"/></div>
+					<div class="intro-txt"><a href="cfp.html">Call For Papers</a></div>
+				</div>
+				<div class="intro-item">
+					<div class="intro-img"><img src="../imgs/intro_2.jpg"/></div>
+					<div class="intro-txt"><a href="organizers.html">The organizers</a></div>
+				</div>
+			</div> -->
+			<div class="intro-normal inner">
+				<div class="intro-title">Call For Papers</div>
+				<div class="intro-body">
+					<p>The 29th International Joint Conference on Artificial Intelligence and the 17th Pacific Rim International Conference on Artificial Intelligence (IJCAI-PRICAI 2020) will be held in Yokohama, Japan, from July 11th to July 17th, 2020. For more than a half-century, IJCAI has remained the premier conference bringing together the international AI community to communicate the advances and achievements of artificial intelligence research.</p>
+					<a class="btn-normal m10" href="cfp.html">Call For Papers</a>
+				</div>
+			</div>
+			<div class="intro-normal inner">
+				<div class="intro-title">The organizer</div>
+				<div class="intro-body">
+					<p>The 29th International Joint Conference on Artificial Intelligence and the 17th Pacific Rim International Conference on Artificial Intelligence (IJCAI-PRICAI 2020) will be held in Yokohama, Japan, from July 11th to July 17th, 2020. For more than a half-century, IJCAI has remained the premier conference bringing together the international AI community to communicate the advances and achievements of artificial intelligence research.</p>
+					<a class="btn-normal m10" href="organizer.html">The organizer</a>
+				</div>
+			</div>
+			<div class="sponsor">
+				<div class="sponsor-content">
+					<div class="sponsor-title">Sponsor Opportunities</div>
+					<div class="sponsor-txt">IJCAI-PRICAI-2020 offers several attractive sponsorship packages to provide opportunities for both smaller and larger companies and organizations to take part in the world’s premiere AI research event with more than 4000 expected attendees from all over the world.</div>
+					<div class="sponsor-btns"><a class="btn-normal" href="mailto:Chengqi.zhang@uts.edu.au">Sponsor IJCAI</a></div>
+				</div>
+				<div class="sponsor-ed">
+					<img width="300" src="../imgs/tencent_logo.png"/>
+				</div>
+			</div>
+		</div><!--.content ends-->		
+		<div class="footer">Copyright © 2020 IJCAI-PRICAI 2020 All Rights Reserved.</div><!--.footer ends-->
+	</div><!--.container ends-->
+	<script>
+
+		$(document).ready(function(){
+
+			$(".main-nav a").hover(function(){
+				$(this).addClass("active");
+			},
+			function(){
+				$(this).removeClass("active");
+			});
+			$(".intro-txt a").hover(function(){
+				$(this).addClass("active");
+			},
+			function(){
+				$(this).removeClass("active");
+			});		
+			$(window).scroll(function () {
+	        	if($(window).scrollTop()>=$("#topPart").height()){
+	          		$(".main-nav").addClass("fixed");
+	          		$(".main-nav").css("marginBottom",$(".main-nav").height()+10);
+	        	}else{
+	          		$(".main-nav").removeClass("fixed");
+	          		$(".main-nav").css("marginBottom",0);
+        		}
+ 			});
+ 			$(".mini-toggle").click(function(){
+ 				if($(".mini-nav-container").hasClass("isHidden")){
+ 					$(".mini-nav-container").removeClass("isHidden");
+ 				}else{
+ 					$(".mini-nav-container").addClass("isHidden");
+ 				}
+ 			});
+ 			$(".fa-times").click(function(){
+ 				$(".mini-nav-container").addClass("isHidden");
+ 			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body{
+	background-color: #fff!important;
+}
+body,div,a,p,h1,h2,h3,span,ul,li,table,tbody,th,td,tr{
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+	color: #555;
+	font-family: '微软雅黑';
+} 
+div{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a{
+	color: #007bff;
+}
+a:active{
+	color: #555;
+}

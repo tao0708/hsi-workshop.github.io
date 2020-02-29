@@ -1,0 +1,152 @@
+<!DOCDYPE HTML>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<meta name="keywords" content="AI,conference,heuristic" />
+	<title>The Organizers</title>
+	
+	<link rel="stylesheet" type="text/css" href="../css/mui.css" />
+	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/mui.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="topPart" class="heading">
+			<div class="heading-txt-not-ie heading-txt">The 1st International Workshop on Heuristic Search in Industry</div>
+			<div class="heading-name"><a href="https://www.ijcai20.org/contact.html">In Conjunction with 29th IJCAI Conference on Artificial Intelligence (IJCAI-20)</a></div>
+			<div class="heading-sub">July 11-17, 2020, Yokohama, Japan</div>
+			<div class="mini-toggle">
+			<a href="#" class="fa fa-bars"></a>
+		</div>
+		</div><!--.header ends-->
+		<div class="main-nav">
+			<a href="index.html">Home</a>
+			<a href="cfp.html">Call For Papers</a>
+			<a class="selected" href="#">Organizers</a>
+			<a href="program.html">Program</a>
+		</div><!--.main-nav ends -->
+		<div class="mini-nav-container isHidden">
+			<div><a href="#" class="fa fa-times"></a></div>
+			<div class="mini-nav-title">
+				<div>The 1st International Workshop on Heuristic Search in Industry</div>
+				<div><a href="https://www.ijcai20.org/contact.html">In Conjunction with 29th IJCAI Conference on Artificial Intelligence (IJCAI-20)</a></div>
+				<div>July 11-17, 2020, Yokohama, Japan </div>
+			</div>
+			<div class="mini-nav">
+				<a href="#">Home</a>
+				<a href="cfp.html">Call For Papers</a>
+				<a href="organizers.html">Organizers</a>
+				<a href="program.html">Program</a>
+			</div>
+		</div><!--.mini-nav ends -->
+		<div class="content">
+			<div class="banner scale">
+				<img src="../imgs/banner-cfp.jpg"/>
+				<div class="txt">The organizers</div>
+			</div>
+			<div class="box">
+				<div class="box-title">General Chair</div>
+				<div class="box-items">
+					<div class="item">
+						<div class="item-name"><a href="#">Chumin Li</a></div>
+						<div class="item-txt">Université de Picardie Jules Verne</div>
+						<div class="item-txt">Email : chu-min.li@u-picardie.fr</div>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="box-title">Program Chair</div>
+				<div class="box-items">
+					<div class="item">
+						<div class="item-name"><a href="#">Shaowei Cai</a></div>
+						<div class="item-txt">Institute of Software, Chinese Academy of Sciences</div>
+						<div class="item-txt">Email: caisw@ios.ac.cn</div>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="box-title">Steering Committee</div>
+				<div class="box-items">
+					<div class="item">
+						<div class="item-name"><a href="#">Holger H. Hoos</a></div>
+						<div class="item-txt">Leiden University</div>
+					</div>
+					<div class="item">
+						<div class="item-name"><a href="#">Frank Neumann</a></div>
+						<div class="item-txt">The University of Adelaide</div>
+					</div>
+					<div class="item">
+						<div class="item-name"><a href="#">Nathan R.Sturtevant</a></div>
+						<div class="item-txt">University of Alberta</div>
+					</div>
+					<div class="item">
+						<div class="item-name"><a href="#">Christian Blum</a></div>
+						<div class="item-txt">Spanish National Research Council</div>
+					</div>
+					<div class="item">
+						<div class="item-name"><a href="#">Diansheng Guo</a></div>
+						<div class="item-txt">Tencent</div>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="box-title">Program Committee</div>
+				<div class="box-items-plain">
+					<div class="item">Qingwei Lin,Microsoft Research</div>
+					<div class="item">Chuan Luo,Microsoft Research</div>
+					<div class="item">Kuldeep Meel,TNational University of Singapore</div>
+					<div class="item">Günther R. Raidl,TU Wien, Austria</div>
+					<div class="item">Andreas Ernst,Monash University, Australia</div>
+					<div class="item">Thomas Baeck,LIACS Leiden</div>
+					<div class="item">Meinolf Sellmann,GE</div>
+					<div class="item">Minghao Yin,Northeast Normal University, China</div>
+					<div class="item">Zhipeng Lv,Huazhong University of Science and Technology</div>
+				</div>
+			</div>
+		</div><!--.content ends-->		
+		<div class="footer">Copyright © 2020 IJCAI-PRICAI 2020 All Rights Reserved.</div><!--.footer ends-->
+	</div><!--.container ends-->
+	<script>
+
+		$(document).ready(function(){
+
+			$(".main-nav a").hover(function(){
+				$(this).addClass("active");
+			},
+			function(){
+				$(this).removeClass("active");
+			});
+			$(".intro-txt a").hover(function(){
+				$(this).addClass("active");
+			},
+			function(){
+				$(this).removeClass("active");
+			});		
+			$(window).scroll(function () {
+	        	if($(window).scrollTop()>=$("#topPart").height()){
+	          		$(".main-nav").addClass("fixed");
+	          		$(".main-nav").css("marginBottom",$(".main-nav").height()+10);
+	        	}else{
+	          		$(".main-nav").removeClass("fixed");
+	          		$(".main-nav").css("marginBottom",0);
+        		}
+ 			});
+ 			$(".mini-toggle").click(function(){
+ 				if($(".mini-nav-container").hasClass("isHidden")){
+ 					$(".mini-nav-container").removeClass("isHidden");
+ 				}else{
+ 					$(".mini-nav-container").addClass("isHidden");
+ 				}
+ 			});
+ 			$(".fa-times").click(function(){
+ 				$(".mini-nav-container").addClass("isHidden");
+ 			});
+		});
+	</script>
+</body>
+</html>

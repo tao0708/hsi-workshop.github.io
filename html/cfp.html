@@ -1,0 +1,131 @@
+<!DOCDYPE HTML>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<meta name="keywords" content="AI,conference,heuristic" />
+	<title>Call For Papers</title>
+	
+	<link rel="stylesheet" type="text/css" href="../css/mui.css" />
+	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/mui.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="topPart" class="heading">
+			<div class="heading-txt-not-ie heading-txt">The 1st International Workshop on Heuristic Search in Industry</div>
+			<div class="heading-name"><a href="https://www.ijcai20.org/contact.html">In Conjunction with 29th IJCAI Conference on Artificial Intelligence (IJCAI-20)</a></div>
+			<div class="heading-sub">July 11-17, 2020, Yokohama, Japan</div>
+			<div class="mini-toggle">
+			<a href="#" class="fa fa-bars"></a>
+		</div>
+		</div><!--.header ends-->
+		<div class="main-nav">
+			<a href="index.html">Home</a>
+			<a class="selected" href="#">Call For Papers</a>
+			<a href="organizers.html">Organizers</a>
+			<a href="program.html">Program</a>
+		</div><!--.main-nav ends -->
+		<div class="mini-nav-container isHidden">
+			<div><a href="#" class="fa fa-times"></a></div>
+			<div class="mini-nav-title">
+				<div>The 1st International Workshop on Heuristic Search in Industry</div>
+				<div><a href="https://www.ijcai20.org/contact.html">In Conjunction with 29th IJCAI Conference on Artificial Intelligence (IJCAI-20)</a></div>
+				<div>July 11-17, 2020, Yokohama, Japan</div>
+			</div>
+			<div class="mini-nav">
+				<a href="index.html">Home</a>
+				<a href="cfp.html">Call For Papers</a>
+				<a href="organizers.html">Organizers</a>
+				<a href="program.html">Program</a>
+			</div>
+		</div><!--.mini-nav ends -->
+		<div class="content">
+			<div class="banner scale">
+				<img src="../imgs/banner-cfp.jpg"/>
+				<div class="txt">Call For Papers</div>
+			</div>
+			<div class="speakers">
+				<div class="speakers-title">Important Dates</div>
+				<div class="speakers-body">
+					<ul class="list-normal">
+						<li>Paper submission deadline: April 25, 2020</li>
+						<li>Notification of Acceptance: May 15, 2020</li>
+						<li>Camera-ready Deadline: May 28, 2020</li>
+						<li>PList of participants: May 30, 2020</li>
+					</ul>
+				</div>
+			</div>
+			<div class="speakers">
+				<div class="speakers-title">Overview</div>
+				<div class="speakers-body">
+					<P>As an effective method for solving complex optimization problems, heuristic search has been widely used in industry, including logistics, digital maps, cloud computing, as well as manufacturing industry. On the other hand, seen from papers in the Heuristic Search area at recent IJCAI and AAAI conferences, the research community has still focused more on classic problems and crafted benchmarks. Algorithms in such papers can hardly be used in practice. Indeed, we can observe a significant lack of the problems of real applications and also a lack of real data sets. The heuristic search is a long history direction and related techniques have experienced a lot progress in the past. We believe it is urgent to make a shift of this direction to focus more on its applications. It is in real industries that we can find the bottlenecks and limits of existing methods. Moreover, we would like to bring the attention of researchers from “making” new ideas to building efficient algorithms and systems that can be used to solve real problems from industry. This workshop is dedicated to this vision. </P>
+					<P class="last">This workshop provides a forum for researchers and practitioners to present the state of research and practice in using heuristic search methods in industries. It differentiates itself from “Heuristic Search” area of IJCAI conference, with focus on real applications.</P>
+				</div>
+			</div>
+			<div class="speakers">
+				<div class="speakers-title">Topics</div>
+				<div class="speakers-body">
+					<p>The workshop encourages submissions of innovative technologies and applications that leverages heuristic search for solving industrial problems. Topics of interest include but not limited to the related problems and data sets, techniques, methodologies, and experiences for heuristic search solutions in industry.</p>
+					<ul class="list-normal">
+						<li>AI planning</li>
+						<li>A* search</li>
+						<li>Cloud computing</li>
+						<li>Digital maps</li>
+						<li>Evolutionary computation</li>
+						<li>Local search</li>
+						<li>Logistics</li>
+						<li>Resource allocation</li>
+						<li>Scheduling</li>
+						<li>Search based software engineering</li>
+						<li>Smart city</li>
+						<li>…</li>
+					</ul>
+				</div>
+			</div>
+		</div><!--.content ends-->		
+		<div class="footer">Copyright © 2020 IJCAI-PRICAI 2020 All Rights Reserved.</div><!--.footer ends-->
+	</div><!--.container ends-->
+	<script>
+
+		$(document).ready(function(){
+
+			$(".main-nav a").hover(function(){
+				$(this).addClass("active");
+			},
+			function(){
+				$(this).removeClass("active");
+			});
+			$(".intro-txt a").hover(function(){
+				$(this).addClass("active");
+			},
+			function(){
+				$(this).removeClass("active");
+			});		
+			$(window).scroll(function () {
+	        	if($(window).scrollTop()>=$("#topPart").height()){
+	          		$(".main-nav").addClass("fixed");
+	          		$(".main-nav").css("marginBottom",$(".main-nav").height()+10);
+	        	}else{
+	          		$(".main-nav").removeClass("fixed");
+	          		$(".main-nav").css("marginBottom",0);
+        		}
+ 			});
+ 			$(".mini-toggle").click(function(){
+ 				if($(".mini-nav-container").hasClass("isHidden")){
+ 					$(".mini-nav-container").removeClass("isHidden");
+ 				}else{
+ 					$(".mini-nav-container").addClass("isHidden");
+ 				}
+ 			});
+ 			$(".fa-times").click(function(){
+ 				$(".mini-nav-container").addClass("isHidden");
+ 			});
+		});
+	</script>
+</body>
+</html>
